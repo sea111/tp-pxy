@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS抢购倒计时</title>
+</head>
+<body>
+<span id="times" >
+<SCRIPT LANGUAGE="JavaScript">
+function _fresh()
+{
+ var endtime=new Date("2018/05/07,24:00:00");
+ var nowtime = new Date();
+ var leftsecond=parseInt((endtime.getTime()-nowtime.getTime())/1000);
+ __d=parseInt(leftsecond/3600/24);
+ __h=parseInt((leftsecond/3600)%24);
+ __m=parseInt((leftsecond/60)%60);
+ __s=parseInt(leftsecond%60);
+var c=new Date();
+var q=((c.getMilliseconds())%10);
+ document.getElementById("times").innerHTML=__d+"天 "+__h+"小时"+__m+"分"+__s+"."+q+"秒";
+ if(leftsecond<=0){
+ document.getElementById("times").innerHTML="抢购已结束";
+ clearInterval(sh);
+ }
+}
+_fresh()
+var sh;
+sh=setInterval(_fresh,100);
+</SCRIPT>
+</span>
+</body>
+</html>

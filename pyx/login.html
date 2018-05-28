@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>耕农宝管理系统</title>
+	</head>
+	<link rel="stylesheet" href="css/login.css" />
+	<body>
+		<div class="login">
+			<img class="pyx-title" src="images/pyx-title.png"/>
+			<div class="login-body">
+				<div class="pyx-login-entry">用户登录口<i class="pyx-login"></i></div>
+				<div class="pyx-line"></div>
+				<div class="login-use-box user-pass">
+					<i class="login-user icon-com"></i>
+					<input class="user inp-com"  type="text" placeholder="用户名" />				
+				</div>
+				<div class="login-pass-box user-pass">
+					<i class="login-pass icon-com"></i>
+					<input class="password inp-com" type="text" placeholder="密码" /> 					
+				</div>
+				<div class="pyx-forget">
+					<input type="checkbox"/>
+					<span class="forget-pass">忘记密码</span>
+				</div>
+				<button id="login">登录</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script>
+		$("#login").click(function(){
+			window.location.href="index.html";
+		})
+	</script>
+</html>

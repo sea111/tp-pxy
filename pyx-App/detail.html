@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+		<title>培养箱-详情</title>
+		<link rel="stylesheet" href="css/detail.css" />
+	</head>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);
+	</script>
+	<body>
+		<div id="detail-box">
+			<div class="head"><i class="arrow-icon"></i><span>培养箱详情</span></div>			
+			<div class="top-con">
+				<span class="online">在线</span>
+				<ul class="day-nav">
+					<li class="day-com day-active three">3天</li>
+					<li class="day-com day-gray seven">7天</li>
+				</ul>
+				<div id="line1" style="width:100%;height:6rem;margin:0 auto;padding-top:0.3rem;"></div>
+				<div id="line2" style="display:none;width:100%;height:6rem;margin:0 auto;padding-top:0.3rem;"></div>
+			</div>
+			<div class="cont">
+				<ul class="cont-box">
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon01.png"/>
+						<span class="cont-right">
+							<p class="num-com">15.70<span class="icon">℃</span></p>
+							<p class="artical-com">温度</p>
+						</span>
+					</li>
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon02.png"/>
+						<span class="cont-right">
+							<p class="num-com">40<span class="icon">%</span></p>
+							<p class="artical-com">光照</p>
+						</span>
+					</li>
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon04.png"/>
+						<span class="cont-right">
+							<p class="num-com">04/05<span class="icon"></span></p>
+							<p class="artical-com">当前时段/总时段</p>
+						</span>
+					</li>
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon03.png"/>
+						<span class="cont-right">
+							<p class="num-com">00:58:12<span class="icon"></span></p>
+							<p class="artical-com">倒计时</p>
+						</span>
+					</li>
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon06.png"/>
+						<span class="cont-right">
+							<p class="num-com green">化霜温度测量故障,化霜温度测量故障,化霜温度测量故障,化霜温度测量故障,化霜温度测量故障<span class="icon open"></span></p>
+							<p class="artical-com">设备告警</p>
+						</span>
+					</li>
+					<li class="cont-com">
+						<img class="cont-pic" src="images/pyx-icon05.png"/>
+						<span class="cont-right">
+							<p class="num-com">除湿,报警,除湿,报警,除湿,报警,除湿,报警<span class="icon open"></span></p>
+							<p class="artical-com ">压缩机<span class="close">关</span></p>
+						</span>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="gjxx">
+				<div class="warn fl">告警信息</div>
+				<div class="detail-arrow fr"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/echarts.simple.min.js" ></script>
+		<script type="text/javascript" src="js/detail.js" ></script>
+	</body>
+	
+</html>

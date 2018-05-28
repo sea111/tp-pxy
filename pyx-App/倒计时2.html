@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		i{
+			font-style: normal;
+		}
+		.add-con{
+			width:200px;
+			background:#0087FD;
+			height:50px;
+			line-height:50px;
+			font-size:30px;
+			color:#fff;
+			margin:20px auto;
+			text-align: center;
+		}
+		.add{
+			color:#fff;
+			display:inline-block;
+			vertical-align:middle;
+			margin-top:-12px;
+		}
+		.ysj{
+			display:inline-block;
+		}
+		a{
+			text-decoration:none;
+		}
+		.next{
+			display:inline-block;
+			width:100px;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			color:#fff;
+			background:#0087FD;
+		}
+		.next:hover{
+			background:#6AB330;
+			color:#fff;
+		}
+		
+		.stop,.star{
+			width:50px;
+			line-height:40px;
+			text-align:center;
+			color:#000;
+			border:1px solid #ccc;
+		}
+	</style>
+	<body>
+		<div class="add-con">
+			<i class="add">+</i>
+			<span class="ysj">压缩机故障 </span>
+		</div>
+		<a class="next">下一步</a>
+		
+		
+		
+		
+		<div class="hd">
+	         <div class="floatleft clock">
+	                   <em id="emH"></em> <strong>:</strong><em id="emM"></em><strong>:</strong><em id="emS"></em>
+	         </div>
+	 	</div>
+	 	<div class="stop">停止</div>
+	 	<div class="star">开始</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript">
+       	function fresh() {
+            var d = "2018-05-10";
+            var endtime = new Date(d);
+            var nowtime = new Date();
+            var leftsecond = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+            d = parseInt(leftsecond / 3600 / 24);
+            h = parseInt((leftsecond / 3600) % 24);
+            m = parseInt((leftsecond / 60) % 60);
+            s = parseInt(leftsecond % 60);
+            var td = d * 24 + h;
+            $("#emH").html(td);
+            $("#emM").html(m);
+            $("#emS").html(s);
+            if (leftsecond <= 0) {
+                    $("#emH").html("00");
+                    $("#emM").html("00");
+                    $("#emS").html("00");
+                clearInterval(sh);
+            }
+        }
+        fresh();
+        var sh;
+        sh = setInterval(fresh, 1000); 
+        $(".stop").click(function(){
+        	clearInterval(sh);
+        })
+        $(".star").click(function(){
+        	sh =setInterval(fresh, 1000); 
+        })
+    </script>
+</html>

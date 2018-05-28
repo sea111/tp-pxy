@@ -1,0 +1,136 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,select,img,section{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+html,body{
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	-webkit-appearance:none;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+#detail-box{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	background:#e6e6e6;
+}
+.top{
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	border-bottom:1px solid #ccc;
+}
+.online{	
+	display:inline-block;
+	font-size:0.24rem;
+	color:#fff;
+	width:0.64rem;
+	height:0.6rem;
+	text-align: center;
+	padding-top:0.05rem;
+	position:absolute;
+	left:0.2rem;
+	background:url(../images/pyx-green.png) no-repeat;
+	background-size:100% 100%;	
+}
+.day-nav{
+	width:100%;
+	text-align:center;
+	height:0.48rem;
+	line-height:0.48rem;
+}
+.day-com{
+	display:inline-block;
+	text-align:center;
+	border-radius:5px;
+	color:#333;
+	font-size:0.28rem;
+	width:1.4rem;
+}
+.day-active{
+	border:1px solid #0087fd;
+	color:#0087fd;
+}
+.day-gray{
+	border:1px solid #808080;
+	border-left:none;
+	margin-left:-0.4rem;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+/*.line-bk{
+	width:100%;
+	height:0.16rem;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#e6e6e6;
+}*/
+.cont{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	height:4.24rem;
+	margin:0.16rem 0;
+	background:#fff;
+}
+.cont-box{
+	/*width:100%;*/
+	width:3.4rem;
+	padding:0 0.2rem;
+	box-sizing:border-box;
+	overflow:hidden;
+	border-bottom:1px solid #ccc;
+	padding-top:0.36rem;
+	padding-bottom:0.3rem;
+	display:inline-block;
+}
+.dd-pic{
+	width:0.44rem;
+	height:0.44rem;
+}
+.dl-con{
+	margin-left:1rem;
+	text-align:left;
+}
+.dl-top{
+	font-size:0.36rem;
+	color:#333;
+}
+.dl-bot{
+	font-size:0.24rem;
+	color:#808080;
+}
+.gjxx{
+	width:100%;
+	height:0.9rem;
+	line-height:0.9rem;
+	font-size:0.28rem;
+	color:#333;
+	padding:0 0.2rem;
+	box-sizing:border-box;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #e6e6e6;
+	background:#fff;
+}
+.warn{
+	height:0.9rem;
+}
+.detail-arrow{
+	width:0.18rem;
+	height:0.3rem;
+	background:url(../images/pyx-arrow3.png) no-repeat;
+	background-size:100% 100%;
+	vertical-align:middle;
+	margin-top:0.3rem;
+}

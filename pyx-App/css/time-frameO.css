@@ -1,0 +1,94 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,select,img,section{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+html,body{
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	-webkit-appearance:none;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+#time-box{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	background:#E6E6E6;
+}
+.cont{
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	margin-bottom:0.12rem;
+	border-bottom:1px solid #cccccc;
+}
+.title{
+	height:0.86rem;
+	line-height:0.86rem;
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	font-size:0.33rem;
+	color:#333;
+}
+.title-pic{
+	display:inline-block;
+	width:0.46rem;
+	height:0.46rem;
+	background:url(../images/pyx-gjxx-icon.png) no-repeat;
+	background-size:100% 100%;
+	vertical-align:middle;
+	margin:-0.1rem 0.2rem 0 0.2rem;
+}
+.title-data{
+	display:inline-block;
+}
+.cont div:nth-child(2){
+	border-top:none;
+}
+.cont div:nth-child(3){
+	border-top:none;
+}
+.cont-com{
+	/*width:100%;
+	line-height: 0.78rem;
+	overflow:hidden;
+	background:#fff;
+	border-top:1px dashed #e8e8e8;
+	padding: 0 0.2rem;
+    box-sizing: border-box;*/
+   	display: inline-block;
+    line-height: 0.78rem;
+    overflow: hidden;
+    background: #fff;
+    border-top: 1px dashed #e8e8e8;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    margin-left: -10px;
+    padding-left: 0.6rem;
+}
+.icon-com{
+	display:inline-block;
+	width:0.16rem;
+	height:0.16rem;
+	background:url(../images/pyx-gjxx-icon2.png) no-repeat;
+	background-size:100% 100%;
+	margin-right:0.21rem;
+}
+.name-com{
+	font-size:0.26rem;
+	color:#333;
+}
+.num-com{
+	margin-left:0.42rem;
+	text-align:left;
+}

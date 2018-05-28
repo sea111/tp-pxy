@@ -1,0 +1,21 @@
+#aside_overlay_left div.top a.show-loading{
+	font-size: 0.32rem;
+    color: white;
+}
+#aside_overlay_left .top p{
+	font-size: 0.3rem;
+    color: #fff;
+}
+#aside_overlay_left .top #btn_bind{
+	font-size: 0.4rem;
+	color: #fe4e83;
+}
+#aside_overlay_left .content{
+	padding: 0rem 0 0 0;
+}
+#aside_overlay_left .content p{
+	margin: 0 0 -0.3rem 0;
+}
+#aside_overlay_left .content p a{
+	font-size: 0.32rem;
+}

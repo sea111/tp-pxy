@@ -1,0 +1,4496 @@
+/* 2015/11/20新加--潜恩康 */
+html .content-panl {
+    margin-top: 120px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.right_tab {
+    width: 70px;
+    height: 320px;
+    background: #9bb6cc;
+    position: fixed;
+    right: 30px;
+    top: 215px;
+    border-radius: 10px;
+    behavior: url(/css/PIE.htc);
+}
+
+.right_tab ul {
+    margin-top: 19px;
+}
+
+.right_tab ul .active {
+    background: #317dd2;
+}
+
+.right_tab ul li:hover {
+    background: #317dd2;
+}
+
+.right_tab ul li {
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.right_tab ul li i {
+    display: block;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.right_tab ul li span {
+    color: #ffffff;
+}
+
+.selects {
+    display: inline-block;
+    cursor: pointer;
+    position: relative
+}
+
+/*改*/
+.yy {
+    position: relative
+}
+
+/*改*/
+.name-input input {
+    height: 23px;
+    width: 70px;
+    border: 1px solid #dedede;
+    line-height: 23px;
+    text-indent: 20px;
+}
+
+.selects img {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 24px;
+}
+
+.selects ul {
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    cursor: pointer;
+    z-index: 100;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/*改*/
+.selects ul li {
+    text-align: left;
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+    text-indent: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selects ul .no:hover {
+    background: #cccccc;
+}
+
+.selects ul .active {
+    background-color: #1c8ee6;
+    color: #FFFFFF;
+}
+
+/*数据中心*/
+
+.wlw-tab-pengj {
+    margin-bottom: -16px;
+}
+
+.wlw-tab-top {
+    background: url("/images/wlyun/tab_off.png") -18px 0px no-repeat;
+    height: 18px;
+    width: 50px;
+}
+
+.wlw-tab-buton {
+    background: url("/images/wlyun/tab_off.png") -18px -102px no-repeat;
+    height: 20px;
+    width: 50px;
+}
+
+.table-tab-con {
+    display: block;
+    background: url("/images/wlyun/tab_off.png") -18px center no-repeat;
+    position: relative;
+}
+
+.table-tab-con {
+    display: block;
+    background: url("/images/wlyun/tab_off_contant.png") -18px center repeat-y;
+    position: relative;
+}
+
+.current .table-tab-con {
+    background: url("/images/wlyun/tab_on_contant.png") -18px center repeat-y;
+}
+
+.vertical-align {
+    width: 20px;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    display: block;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.current .wlw-tab-top {
+    background: url("/images/wlyun/tab_on.png") -18px 0px no-repeat;
+}
+
+.current .wlw-tab-buton {
+    background: url("/images/wlyun/tab_on.png") -18px -102px no-repeat;
+    z-index: 101
+}
+
+.current {
+    z-index: 101;
+    position: relative;
+}
+
+.current .table-tab-con a {
+    color: #fff;
+}
+
+.data_viwe button {
+    float: right;
+    width: 58px;
+    height: 23px;
+    background: url(/images/wlyun/btn.png) no-repeat center center;
+    border: none;
+}
+
+.data_viwe input {
+    display: inline-block;
+    width: 130px;
+    height: 21px;
+    line-height: 21px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 5px;
+    color: #625c5c;
+    padding-left: 5px;
+}
+
+.cl {
+    display: inline-block;
+    margin-right: 5px;
+    top: 4px;
+    left: 35px;
+    width: 15px;
+    height: 12px;
+    border: 1px solid #a8a8a8;
+    background-color: #dedede;
+    border-radius: 3px;
+    behavior: url(/css/PIE.htc);
+
+    margin-bottom: 3px;
+}
+
+.intrble span {
+    display: inline-block;
+    margin-right: 0px; /*20px*/
+
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.jt {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.tl-left {
+    float: right;
+    margin-right: 35px;
+}
+
+.tl-right {
+    float: right;
+    margin-right: 35px;
+}
+
+.tl-left img, .tl-right img {
+    display: block;
+    float: left;
+    margin-top: 3px;
+}
+
+.tl-right span, .tl-left span {
+    display: block;
+    float: left;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.bottom-tu {
+    padding-bottom: 50px;
+}
+
+.shap1 .seleced {
+    background: url("/images//wlyun/Shape1.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap2 .seleced {
+    background: url("/images/wlyun/Shape2.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap3 .seleced {
+    background: url("/images/wlyun/Shape3.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap4 .seleced {
+    background: url("/images/wlyun/Shape4.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap5 .seleced {
+    background: url("/images/wlyun/Shape5.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap6 .seleced {
+    background: url("/images/wlyun/Shape6.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap7 .seleced {
+    background: url("/images/wlyun/Shape7.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap8 .seleced {
+    background: url("/images/wlyun/Shape8.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap9 .seleced {
+    background: url("/images/wlyun/Shape9.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap10 .seleced {
+    background: url("/images/wlyun/Shape10.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap11 .seleced {
+    background: url("/images/wlyun/Shape11.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap12 .seleced {
+    background: url("/images/wlyun/Shape12.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap13 .seleced {
+    background: url("/images/wlyun/Shape13.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap14 .seleced {
+    background: url("/images/wlyun/Shape14.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.shap15 .seleced {
+    background: url("/images/wlyun/Shape15.png") no-repeat;
+    width: 15px;
+    height: 12px
+}
+
+.checkAll {
+    position: absolute;
+    top: 188px;
+    left: 10px;
+}
+
+.checkAll .cl {
+    height: 14px;
+    float: left;
+}
+
+.checkAll span {
+    float: left;
+}
+
+.checkAll .seleced {
+    background: url("/images/wlyun/icon_ture.png") no-repeat;
+}
+
+.data_viwe .selects input {
+    width: 72px;
+    height: 22px;
+    text-indent: 5px;
+    padding: 0 17px 0 0;
+    background: none;
+    background-color: #ffffff;
+    border: 1px solid #99beeb;
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.data_viwe .selects ul {
+    border: 1px solid #99beeb;
+}
+
+/*图片中心*/
+ul {
+    list-style: none;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+.img-content li {
+    float: left;
+    margin-right: 35px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.img-content li .img {
+    width: 190px;
+    height: 145px;
+    border: 1px solid #ffffff;
+}
+
+.img-content li p {
+    text-align: left;
+    text-overflow: ellipsis; /*white-space:nowrap ;*/
+    overflow: hidden;
+    width: 190px;
+}
+
+.img-content li .pl a {
+    color: #1b8ce6;
+    cursor: pointer;
+}
+
+.img-content li p span {
+    margin-left: 5px;
+}
+
+.img-content li .edit {
+    position: absolute;
+    height: 30px;
+    width: 190px;
+    top: 0;
+    left: 1px;
+    background: #6ca5dc;
+    display: none;
+}
+
+.img-content li .edit img {
+    display: block;
+    margin-top: 9px;
+}
+
+.img-content li .edit .bj {
+    float: left;
+    margin-left: 11px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF
+}
+
+.img-content li .edit .pl {
+    float: left;
+    margin-left: 50px;
+}
+
+.img-content li .edit .bj_img {
+    float: left;
+    margin-left: 11px;
+}
+
+.img-content li .edit .pl_img {
+    float: left;
+    margin-left: 10px;
+}
+
+.img-content li .edit .sc {
+    float: right;
+    margin-right: 6px;
+}
+
+.search {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.search li {
+    float: left;
+    position: relative;
+}
+
+.search .select {
+    background: url("/images/wlyun/fengsj/b-xl.png") no-repeat 70px center;
+    text-align: left;
+    width: 74px;
+    height: 21px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    text-indent: 5px;
+    line-height: 23px;
+    background-color: #ffffff;
+    behavior: url(/css/PIE.htc);
+    padding-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sear label {
+    display: block;
+    float: left;
+    margin-top: 3px;
+}
+
+.sl li {
+    float: none;
+    width: 84px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sl li:hover {
+    background: #999999;
+}
+
+.pagese {
+    margin-top: 25px;
+}
+
+.data input {
+    display: inline-block;
+    width: 130px;
+    height: 21px;
+    line-height: 21px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 5px;
+    color: #625c5c;
+    padding-left: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+.sec {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sear {
+    float: left;
+    position: relative;
+}
+
+.sear .sl .selected {
+    background: #cccccc
+}
+
+.sl {
+    position: absolute;
+    border: 1px solid #999999;
+    display: none;
+    border-radius: 5px;
+    z-index: 10;
+    background: #ffffff;
+    text-indent: 5px;
+    top: 22px;
+    behavior: url(/css/PIE.htc);
+}
+
+.data {
+    margin-left: 15px;
+    float: left;
+    width: 490px;
+}
+
+.data button {
+    float: right;
+    width: 58px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.img-content {
+    width: 1243px;
+}
+
+.img-content li p .ch {
+    float: right;
+}
+
+.right_tab {
+    width: 70px;
+    height: auto;
+    background: #9bb6cc;
+    position: fixed;
+    right: 50px;
+    top: 215px;
+    border-radius: 10px;
+    z-index: 1;
+    behavior: url(/css/PIE.htc);
+}
+
+.data .submits {
+    width: 85px;
+    margin-left: 5px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    color: #1b8ce6;
+}
+
+.data .submits:hover {
+    background: #1f91e5;
+    color: #ffffff;
+}
+
+.right_tab ul {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.right_tab ul li i {
+    display: block;
+    padding-top: 10px;
+}
+
+.right_tab ul li span {
+    color: #ffffff;
+}
+
+.right_tab ul li:hover {
+    background: #317dd2;
+}
+
+.right_tab ul .active {
+    background: #317dd2;
+    position: relative
+}
+
+.tc {
+    position: absolute;
+    width: 520px;
+    height: 365px;
+    background: #ffffff;
+    z-index: 20001;
+}
+
+.contain {
+    width: 1346px;
+}
+
+.img-content li .pl span {
+    margin-left: 35px;
+}
+
+.edit a {
+    float: left;
+}
+
+/*视频中心*/
+.buttoons {
+    width: 112px;
+    height: 22px;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 140px;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="#1f94e5", endcolorstr="#1260c8", gradientType=1);
+    background: -ms-linear-gradient(top, #1f94e5, #1260c8); /* IE 10 */
+    background: -moz-linear-gradient(top, #1f94e5, #1260c8); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1f94e5), to(#1260c8)); /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1f94e5), to(#1260c8)); /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #1f94e5, #1260c8); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #1f94e5, #1260c8); /*Opera 11.10+*/
+}
+
+.content .fp-panal {
+    width: 106px;
+    height: 549px;
+    background-color: #303030;
+    overflow: hidden;
+    position: relative;
+}
+
+/*改*/
+.fp-panal .fp {
+    height: 23px;
+    width: 23px;
+    margin: 0 auto;
+    padding-top: 17px;
+    cursor: pointer;
+}
+
+.fp-panal .one {
+    background: url("/images/video/v1.png") no-repeat center center;
+}
+
+.fp-panal .four {
+    background: url("/images/video/v4.png") no-repeat center center;
+}
+
+.fp-panal .nine {
+    background: url("/images/video/v9.png") no-repeat center center;
+}
+
+.fp-panal .twl {
+    background: url("/images/video/v16.png") no-repeat center center;
+}
+
+.fp-panal .one:hover, .fp-panal .one.active {
+    background: url("/images/video/v1-hover.png") no-repeat center center;
+}
+
+.fp-panal .four:hover, .fp-panal .four.active {
+    background: url("/images/video/v4-hover.png") no-repeat center center;
+}
+
+.fp-panal .nine:hover, .fp-panal .nine.active {
+    background: url("/images/video/v9-hover.png") no-repeat center center;
+}
+
+.fp-panal .twl:hover, .fp-panal .twl.active {
+    background: url("/images/video/v16-hover.png") no-repeat center center;
+}
+
+.selects input {
+    width: 75px;
+    height: 17px;
+    text-indent: 5px;
+    line-height: 17px;
+    cursor: pointer;
+    background: url("/images/wlyun/fengsj/b-xl.png") no-repeat 60px center;
+    background-color: #ffffff
+}
+
+.fp-panal .selects ul li {
+    text-align: left;
+    text-indent: 5px;
+}
+
+.bottom {
+    width: 75px;
+    margin: 0 auto;
+    margin-top: 44px;
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+}
+
+.bottom .fullscran {
+    width: 26px;
+    height: 20px;
+    background: url("/images/video/v2/fullscran.png") no-repeat center center;
+    float: left;
+    cursor: pointer;
+}
+
+.bottom .caram {
+    width: 26px;
+    height: 20px;
+    background: url("/images/video/v2/camera2.png") no-repeat center center;
+    float: right;
+    cursor: pointer;
+}
+
+.bottom .fullscran:hover {
+    background: url("/images/video/v2/fullscran-hover.png") no-repeat center center;
+}
+
+.bottom .caram:hover {
+    background: url("/images/video/v2/camera2-hover.png") no-repeat center center;
+}
+
+.content .video {
+    height: 541px;
+    width: 787px;
+    background: #343434;
+    border: 4px solid #000000;
+    position: absolute;
+    left: 106px;
+    top: 0px;
+    z-index: 1;
+}
+
+.video .video-1 {
+    width: 20000px;
+    height: 135px;
+    border: 1px solid #16191c;
+    float: left;
+}
+
+.video .video-1:hover {
+    border: 1px solid #b09d4e;
+}
+
+.right-panl {
+    position: absolute;
+    width: 347px;
+    background: #303030;
+    height: 549px;
+    right: 22px;
+}
+
+.content .v-button {
+    height: 115px;
+    width: 22px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content .play {
+    background: url("/images/video/btn-loop.png") no-repeat center center;
+    right: 0px;
+    top: 19px;
+}
+
+.content .loop {
+    background: url("/images/video/btn-loop.png") no-repeat center center;
+    right: 0px;
+    top: 134px;
+}
+
+.right {
+    position: absolute;
+    right: 347px;
+    top: 0px;
+    z-index: 0;
+}
+
+.content .v-button-active {
+    background: url("/images/video/btn-active.png") no-repeat center center;
+    color: #ffffff;
+}
+
+.play i {
+    width: 22px;
+    height: 32px;
+    display: block;
+    background: url(/images/video/arrow-right-black.png) no-repeat center bottom;
+}
+
+.v-button p {
+    margin-top: 3px;
+}
+
+.loop i {
+    width: 22px;
+    height: 32px;
+    display: block;
+    background: url(/images/video/arrow-right-black.png) no-repeat center bottom;
+}
+
+.v-button .fh {
+    background: url(/images/video/arrow-left-white.png) no-repeat center bottom;
+}
+
+.right-panl .controlss {
+    width: 347px;
+    height: 549px;
+    position: absolute;
+    background: #303030;
+    z-index: 1;
+}
+
+.play-control {
+    /*width: 260px;*/
+    width: 333px;
+    overflow: hidden;
+    /*margin-left: 43px;*/
+    margin-left: 19px;
+}
+
+.play-control a {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    /*margin: 10px;*/
+    margin: 5px;
+    border-radius: 48px;
+    background-color: #444444;
+    /*margin-left: 25px;*/
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.vv-play {
+    background: url(/images/video/play/play.png) no-repeat 16px center;
+}
+
+.d-control {
+    background: url(/images/video/v2/bg.png) no-repeat center center;
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.d-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.d-list .d1 {
+    background: url(/images/video/v2/d1.png) no-repeat center center;
+}
+
+.d-control .d-list .d1:hover {
+    background: url(/images/video/v2/d1-hover.png) no-repeat center center;
+}
+
+.d-list .d2 {
+    background: url(/images/video/v2/d2.png) no-repeat center center;
+}
+
+.d-control .d-list .d2:hover {
+    background: url(/images/video/v2/d2-hover.png) no-repeat center center;
+}
+
+.d-list .d3 {
+    background: url(/images/video/v2/d3.png) no-repeat center center;
+}
+
+.d-control .d-list .d3:hover {
+    background: url(/images/video/v2/d3-hover.png) no-repeat center center;
+}
+
+.d-list .d4 {
+    background: url(/images/video/v2/d4.png) no-repeat center center;
+}
+
+.d-control .d-list .d4:hover {
+    background: url(/images/video/v2/d4-hover.png) no-repeat center center;
+}
+
+.d-list .d5 {
+    background: url(/images/video/v2/d5.png) no-repeat center center;
+}
+
+.d-control .d-list .d5:hover {
+    background: url(/images/video/v2/d5-hover.png) no-repeat center center;
+}
+
+.d-list .d6 {
+    background: url(/images/video/v2/d6.png) no-repeat center center;
+}
+
+.d-control .d-list .d6:hover {
+    background: url(/images/video/v2/d6-hover.png) no-repeat center center;
+}
+
+.d-list .d7 {
+    background: url(/images/video/v2/d7.png) no-repeat center center;
+}
+
+.d-control .d-list .d7:hover {
+    background: url(/images/video/v2/d7-hover.png) no-repeat center center;
+}
+
+.d-list .d8 {
+    background: url(/images/video/v2/d8.png) no-repeat center center;
+}
+
+.d-control .d-list .d8:hover {
+    background: url(/images/video/v2/d8-hover.png) no-repeat center center;
+}
+
+.d-list .d9 {
+    background: url(/images/video/v2/d9.png) no-repeat center center;
+}
+
+.d-control .d-list .d9:hover {
+    background: url(/images/video/v2/d9-hover.png) no-repeat center center;
+}
+
+.d-func {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 176px;
+}
+
+.d-sound, .d-zoom, .sound-loud, .sound-low {
+    width: 100%;
+    height: 34px;
+    background: none;
+    margin-bottom: 12px;
+}
+
+.d-func .d-photo {
+    width: 100%;
+    height: 34px;
+    background: url(/images/video/v2/camera-control2.png) no-repeat center center;
+    margin-bottom: 12px;
+}
+
+.d-func .photo-now {
+    width: 174px;
+    height: 34px;
+    background: url(/images/video/v2/vb_err.png) no-repeat 40px center;
+    text-indent: 70px;
+    line-height: 34px;
+    color: #9c9c9c
+}
+
+.d-sound .sound-loud, .d-sound .sound-low {
+    width: 49px;
+}
+
+.d-zoom .zoom-in, .d-zoom .zoom-out {
+    width: 49px;
+}
+
+.channel-list {
+    width: 308px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.channel-list .channel-control ul li {
+    width: 140px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    background-color: #181818;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    behavior: url(/css/PIE.htc);
+}
+
+.channel-list .channel-control ul li:hover {
+    background: #197ede;
+
+}
+
+.channel-list .channel-control {
+    width: 310px;
+    height: 90px;
+
+}
+
+.channel-control ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-indent: 35px;
+    background: url("/images/video/v2/qj.png") no-repeat 8px center;
+}
+
+.channel-control ul .mode2 a {
+    background: url("/images/video/v2/qjs.png") no-repeat 8px center;
+}
+
+.channel-control ul .mode3 a {
+    background: url("/images/video/v2/sp.png") no-repeat 8px center;
+}
+
+.channel-control ul li a i {
+    display: block;
+    float: right;
+    height: 24px;
+    width: 26px;
+    background: url(/images/video/control/state-wait.png) no-repeat center center;
+}
+
+.channel-control .play {
+    background: url(/images/video/control/state-play.png) no-repeat center center;
+}
+
+.channel-control .fail {
+    background: url(/images/video/control/state-fail.png) no-repeat center center;
+}
+
+.channel-list .channel-control ul {
+    width: 310px;
+}
+
+.status_text {
+    position: absolute;
+    top: 13px;
+    right: 300px;
+}
+
+.pos-item .selects input {
+    background: url("/images/wlyun/fengsj/b-xl.png") no-repeat 100px center;
+}
+
+.channel-list li:hover {
+    background: #197ede;
+}
+
+.channel-list li .left {
+    width: 26px;
+    height: 24px;
+    background: url("/images/video/v2/qj.png") no-repeat center center;
+}
+
+.channel-list li .center {
+    width: 97px;
+    height: 24px;
+}
+
+.channel-list li .rights {
+    width: 17px;
+    height: 24px;
+}
+
+.channel-list li .fails {
+    background: url(/images/video/control/state-fail.png) no-repeat 0 center;
+}
+
+.channel-list li .wait {
+    background: url(/images/video/control/state-wait.png) no-repeat center center;
+}
+
+.channel-list li .playss {
+    background: url(/images/video/control/state-play.png) no-repeat 0 center;
+}
+
+.channel-list li div {
+    float: left;
+    line-height: 24px;
+    color: #ffffff;
+    text-indent: 2px;
+}
+
+html .rollbar-path-vertical .rollbar-handle {
+    left: -3px;
+}
+
+html .rollbar-path-vertical {
+    right: 10px;
+}
+
+.pos-pot {
+    width: 320px;
+}
+
+.pos-pot .pot-list {
+    width: 310px;
+    height: 210px;
+}
+
+.pos-pot .pot-list .pos_pot_name input {
+    background: none;
+    border: none;
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.pos-pot .pot-list .pos_pot_name {
+    padding-bottom: 2px;
+    padding-left: 4px;
+    background: none;
+}
+
+.pos-pot .selects {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.pos-pot .selects input {
+    width: 117px;
+    height: 17px;
+    text-indent: 6px;
+    line-height: 17px;
+    vertical-align: middle;
+}
+
+.pos-pot .pot-list .pos_pot_pin, .pos-pot .pot-list .pos_pot_delete, .pos-pot .pot-list .pos_pot_save {
+    right: 50px;
+    top: 5px;
+}
+
+.right-panl .loop-control {
+    width: 347px;
+    height: 549px;
+    position: absolute;
+    z-index: 0;
+    background: #303030;
+}
+
+.top-button li {
+    text-align: center;
+    font-size: 14px;
+}
+
+.top-button li label {
+    color: #ffffff;
+    width: 115px;
+    float: left;
+    text-align: right;
+    line-height: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.top-button .selects {
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+}
+
+.top-button .selects input {
+    width: 150px;
+    height: 23px;
+    text-indent: 5px;
+    padding: 0;
+    background: none;
+    background-color: #ffffff;
+}
+
+.top-button .selects img {
+    height: 25px;
+}
+
+.top-button {
+    margin-top: 30px;
+}
+
+.top-button li input {
+    width: 130px;
+    height: 23px;
+    text-indent: 5px;
+    float: left;
+    padding-right: 20px;
+    background: url("/images/margzz/cancel.png") no-repeat 130px center;
+    background-color: #ffffff;
+}
+
+.top-button li {
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+.top-button li .search {
+    width: 74px;
+    height: 26px;
+    margin: 0 auto;
+    background: #1c81e7;
+    line-height: 26px;
+    color: #ffffff;
+    background: url(/images/video/btn.png) no-repeat 10px center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.video-replay {
+    width: 260px;
+    height: 280px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.video-replay ul {
+    padding-top: 10px;
+}
+
+.video-replay li span {
+    display: block;
+    float: left;
+    line-height: 20px;
+}
+
+.video-replay li {
+    color: #0066cc;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.video-replay li .xh {
+    height: 20px;
+    width: 34px;
+    text-align: center;
+}
+
+.video-replay li .name {
+    width: 150px;
+    height: 20px;
+    padding-left: 4px;
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.video-replay li .plays {
+    width: 30px;
+    height: 16px;
+    border: 1px solid #CCCCCC;
+    margin-right: 25px;
+    background: url("/images/video/v2/play.png") no-repeat center center;
+    border-radius: 5px;
+    margin-top: 1px;
+    cursor: pointer;
+    behavior: url(/css/PIE.htc);
+}
+
+.video-replay li:hover {
+    background-color: #e6e6e6;
+}
+
+.video-replay li a {
+    color: #167400;
+    cursor: pointer;
+}
+
+.video-replay .activ {
+    background-color: #b3b3b3;
+}
+
+.video-replay .activ .plays {
+    background: url("/images/video/v2/pause.png") no-repeat center center;
+    background-color: #1a1a1a;
+}
+
+.bottom-button {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.bottom-button .button {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #444444;
+    cursor: pointer;
+}
+
+.bottom-button .bf {
+    margin-left: 25px;
+    background: url(/images/video/play/play.png) no-repeat 16px center;
+    background-color: #444444;
+}
+
+.bottom-button .zt {
+    margin-left: 35px;
+    background: url(/images/video/play/pause.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.bottom-button .kj {
+    margin-left: 35px;
+    background: url(/images/video/play/next.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.bottom-button .button:hover {
+    background-color: #000000;
+}
+
+.top-button .selects ul li {
+    width: 150px;
+    text-align: left;
+    text-indent: 6px;
+    font-size: 14px;
+}
+
+.top-button .selects ul {
+    border: 1px solid #ccc;
+}
+
+.d-zoom .d-zoom-left {
+    width: 80px;
+    height: 34px;
+    float: left;
+    background: url(/images/video/v2/xt.png) no-repeat center center;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+/*.d-zoom .d-zoom-left:hover{color:#ff7220;background:url(/images/video/v2/zoom-big-hover.png) no-repeat 19px center;background-color:#F1F1F1;border-radius: 5px;behavior:url(/css/PIE.htc);}*/
+.d-zoom .d-zoom-left p {
+    line-height: 34px;
+}
+
+.d-zoom .d-zoom-right {
+    width: 80px;
+    height: 34px;
+    float: right;
+    background: url(/images/video/v2/xt.png) no-repeat center center;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+/*.d-zoom .d-zoom-right:hover{color:#ff7220;background:url(/images/video/v2/zoom-small-hover.png) no-repeat 19px center;background-color:#F1F1F1;border-radius: 5px;behavior:url(/css/PIE.htc);}*/
+.d-zoom .d-zoom-right p {
+    line-height: 34px;
+}
+
+.d-sound .d-sound-left {
+    width: 80px;
+    height: 34px;
+    float: left;
+    background: url(/images/video/v2/xt.png) no-repeat center center;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+/*.d-sound .d-sound-left:hover{color:#ff7220;background:url(/images/video/v2/sound-big-hover.png) no-repeat 19px center;}*/
+.d-sound .d-sound-left p {
+    line-height: 34px;
+}
+
+.d-sound .d-sound-right {
+    width: 80px;
+    height: 34px;
+    float: right;
+    background: url(/images/video/v2/xt.png) no-repeat center center;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+/*.d-sound .d-sound-right:hover{color:#ff7220;background:url(/images/video/v2/sound-later-hover.png) no-repeat 19px center;}*/
+.d-sound .d-sound-right p {
+    line-height: 34px;
+    text-indent: 50px;
+}
+
+.d-zoom .d-zoom-left .big {
+    width: 40px;
+    height: 100%;
+    float: left;
+    background: url("/images/video/v2/vb_img.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-left .big:hover {
+    background: url("/images/video/v2/vb_img_h.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-left .sm {
+    width: 40px;
+    height: 100%;
+    float: right;
+    background: url("/images/video/v2/vs_img.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-left .sm:hover {
+    background: url("/images/video/v2/vs_img_h.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-right .big {
+    width: 40px;
+    height: 100%;
+    float: left;
+    background: url("/images/video/v2/vb_sound.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-right .big:hover {
+    background: url("/images/video/v2/vb_sound_h.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-right .sm {
+    width: 40px;
+    height: 100%;
+    float: right;
+    background: url("/images/video/v2/vs_sound.png") no-repeat center center;
+}
+
+.d-zoom .d-zoom-right .sm:hover {
+    background: url("/images/video/v2/vs_sound_h.png") no-repeat center center;
+}
+
+.d-sound .d-sound-left .big {
+    width: 40px;
+    height: 100%;
+    float: left;
+    background: url("/images/video/v2/vb_yy.png") no-repeat center center;
+}
+
+.d-sound .d-sound-left .big:hover {
+    background: url("/images/video/v2/vb_yy_h.png") no-repeat center center;
+}
+
+.d-sound .d-sound-left .sm {
+    width: 40px;
+    height: 100%;
+    float: right;
+    background: url("/images/video/v2/vs_yy.png") no-repeat center center;
+}
+
+.d-sound .d-sound-left .sm:hover {
+    background: url("/images/video/v2/vs_yy_h.png") no-repeat center center;
+}
+
+.d-sound .d-sound-right .big {
+    width: 40px;
+    height: 100%;
+    float: left;
+    background: url("/images/video/v2/vb_play.png") no-repeat center center;
+}
+
+.d-sound .d-sound-right .big:hover {
+    background: url("/images/video/v2/vb_play_h.png") no-repeat center center;
+}
+
+.d-sound .d-sound-right .sm {
+    width: 40px;
+    height: 100%;
+    float: right;
+    background: url("/images/video/v2/vs_play.png") no-repeat center center;
+
+}
+
+.d-sound .d-sound-right .sm:hover {
+    background: url("/images/video/v2/vs_play_h.png") no-repeat center center;
+}
+
+.rollbar-handle {
+    cursor: default;
+}
+
+.d-func .d-photo .photo-now:hover {
+    color: #000000;
+    background: url("/images/video/v2/vb_err_h.png") no-repeat 40px center;
+}
+
+.top-nr {
+    height: 70px;
+    position: absolute;
+    top: -80px;
+}
+
+.top-nr .right-button {
+    position: relative;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+    color: #ffffff;
+    background-color: #1e8fe6;
+    padding: 0 7px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 95px;
+    display: none;
+    behavior: url(/css/PIE.htc);
+}
+
+.top-nr .right-button input {
+    position: relative;
+    width: 118px;
+    height: 20px;
+    border: 1px solid #c9c9c9;
+    font-size: 12px;
+    border-radius: 5px;
+    text-indent: 3px;
+    line-height: 20px;
+    padding-right: 25px;
+    background: url("/images/margzz/cancel.png") no-repeat 128px center;
+    background-color: #ffffff;
+    behavior: url(/css/PIE.htc);
+}
+
+.right-button img {
+    position: absolute;
+    bottom: -6px;
+    right: 200px;
+}
+
+.right-button p {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    background: #eeeae7;
+    line-height: 25px;
+    color: #259be3;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    behavior: url(/css/PIE.htc);
+}
+
+/*设备管理*/
+
+.an-button-dw * {
+    color: #999999;
+}
+
+.an-button * {
+    color: #0e487c;
+}
+
+.content .an-button li .text, .content .an-button-dw li .text {
+    text-align: center;
+    font-size: 16px;
+    color: #0e487c;
+    margin-top: 6px;
+    height: 37px;
+}
+
+.content .an-button-dw li .text {
+    color: #686868;
+    text-shadow: 0px 1px 3px #b2b2b2;
+}
+
+/*开关灯 -- start*/
+.content .an-button li, .content .an-button-dw li {
+    margin-right: 44px;
+    float: left;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.content .an-button li a.item, .content .an-button-dw li a.item {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/dn-button.png") no-repeat center center;
+}
+
+.content .an-button li .button {
+    width: 71px;
+    height: 37px;
+    background: url("/images/wlyun/close.png") no-repeat center center;
+    margin: 0 auto;
+    margin-top: 6px;
+    cursor: pointer;
+
+}
+
+.content .an-button li .button:hover {
+    width: 69px;
+    height: 36px;
+    background: url("/images/wlyun/close.png") no-repeat center center;
+    margin: 0 auto;
+    margin-top: 6px;
+    cursor: pointer;
+
+}
+
+.content .an-button-dw li .button {
+    width: 71px;
+    height: 37px;
+    background: url("/images/wlyun/close-dw.png") no-repeat center center;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.content .an-button li .open {
+    background: url("/images/wlyun/open.png") no-repeat center center;
+}
+
+.content .an-button li .open:hover {
+    width: 69px;
+    height: 36px;
+    background: url("/images/wlyun/open.png") no-repeat center center;
+}
+
+.content .an-button-dw li .open {
+    background: url("/images/wlyun/open-dw.png") no-repeat center center;
+}
+
+.an-button .kg .light-255 {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/light.png") no-repeat center center;
+}
+
+.an-button .kg .light-0 {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/gb-light.png") no-repeat center center;
+}
+
+.an-button-dw .kg .light-0, .an-button-dw .kg .light-255 {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/light_dw.png") no-repeat center center;
+}
+
+/*开关灯 -- end*/
+/*履带 -- start*/
+.content .an-button-dw li .ld {
+    height: 170px;
+    width: 170px;
+    background: url("/images/wlyun/lvdai_moren.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+}
+
+.content .an-button li .ld {
+    height: 170px;
+    width: 170px;
+    background: url("/images/wlyun/lvdai01.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.content .an-button li .ld:hover {
+    height: 168px;
+    width: 168px;
+    background: url("/images/wlyun/lvdai01.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+/*履带 -- end*/
+/*转仓 -- start*/
+.content .an-button-dw li .cw, .content .an-button li .cw {
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    background: url("/images/wlyun/bg-wz.png") no-repeat center center;
+}
+
+.content .an-button li .cw {
+    cursor: pointer;
+}
+
+.content .an-button-dw li .cw .bg1 {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/zk-m.png") no-repeat center center;
+}
+
+.content .an-button li .cw .bg1 {
+    width: 170px;
+    height: 170px;
+    background: url("/images/wlyun/zk.png") no-repeat center center;
+}
+
+.content .an-button-dw li .cw .bg {
+    position: absolute;
+    top: 0;
+    width: 29px;
+    height: 30px;
+    background: url("/images/wlyun/cwt-bg-m.png") no-repeat center center;
+    text-align: center;
+    line-height: 30px;
+}
+
+.content .an-button li .cw .bg {
+    position: absolute;
+    top: 0;
+    width: 29px;
+    height: 30px;
+    background: url("/images/wlyun/cwt-bg.png") no-repeat center center;
+    text-align: center;
+    line-height: 30px;
+}
+
+.content .an-button-dw li .cw .bg span, .content .an-button li .cw .bg span {
+    color: #ffffff;
+}
+
+.content .an-button-dw li .cw .bg2, .content .an-button li .cw .bg2 {
+    left: 69px;
+    top: 20px;
+}
+
+.content .an-button-dw li .cw .bg3, .content .an-button li .cw .bg3 {
+    left: 105px;
+    top: 35px;
+}
+
+.content .an-button-dw li .cw .bg4, .content .an-button li .cw .bg4 {
+    left: 120px;
+    top: 70px;
+}
+
+.content .an-button-dw li .cw .bg5, .content .an-button li .cw .bg5 {
+    left: 105px;
+    /* bottom: 100px; */
+    top: 105px;
+}
+
+.content .an-button-dw li .cw .bg6, .content .an-button li .cw .bg6 {
+    left: 69px;
+    top: 120px;
+}
+
+.content .an-button-dw li .cw .bg7, .content .an-button li .cw .bg7 {
+    left: 35px;
+    top: 105px
+}
+
+.content .an-button-dw li .cw .bg8, .content .an-button li .cw .bg8 {
+    left: 20px;
+    top: 70px;
+}
+
+.content .an-button-dw li .cw .bg9, .content .an-button li .cw .bg9 {
+    left: 35px;
+    top: 35px;
+}
+
+/*.content .an-button-dw li .cw .this,*/
+.content .an-button li .cw .this {
+    background: url("/images/wlyun/green-cwt.png") no-repeat center center;
+}
+
+.content .an-button-dw li .cw .bg span, .content .an-button li .cw .bg span {
+    display: block;
+}
+
+/*转仓 -- end*/
+
+/*工作模式 -- start*/
+.an-button-dw .gk {
+    height: 85px;
+}
+
+.an-button .gk {
+    height: 85px;
+    cursor: pointer;
+}
+
+.an-button-dw .sh {
+    height: 85px;
+}
+
+.an-button .sh {
+    height: 85px;
+    cursor: pointer;
+}
+
+.an-button .gk:hover *, .an-button .sh:hover * {
+    color: red;
+}
+
+.an-button .gk:hover i, .an-button .sh:hover i {
+    width: 31px;
+    height: 32px;
+}
+
+.an-button .gks {
+    background: url("/images/wlyun/sgk.png") no-repeat center bottom;
+}
+
+.an-button .sks {
+    background: url("/images/wlyun/xsk.png") no-repeat center top;
+}
+
+.an-button .gks span, .an-button .sks span {
+    color: #ffffff;
+}
+
+.an-button-dw .gk i {
+    display: block;
+    width: 32px;
+    height: 33px;
+    background: url("/images/wlyun/gzdw01.png") no-repeat center center;
+    position: absolute;
+    top: 35px;
+    left: 47px;
+}
+
+.an-button .gk i {
+    display: block;
+    width: 32px;
+    height: 33px;
+    background: url("/images/wlyun/ty.png") no-repeat center center;
+    position: absolute;
+    top: 35px;
+    left: 47px;
+}
+
+.an-button-dw .sh i {
+    display: block;
+    width: 32px;
+    height: 33px;
+    background: url("/images/wlyun/gzdw02.png") no-repeat center center;
+    position: absolute;
+    top: 97px;
+    left: 47px;
+}
+
+.an-button .sh i {
+    display: block;
+    width: 32px;
+    height: 33px;
+    background: url("/images/wlyun/nl.png") no-repeat center center;
+    position: absolute;
+    top: 97px;
+    left: 47px;
+}
+
+.an-button-dw .gk span, .an-button .gk span {
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 95px;
+    font-size: 14px;
+}
+
+.an-button-dw .gz .gzdw, .an-button .gz .gzdw {
+    background: url("/images/wlyun/gzbg001.png") no-repeat center center;
+    width: 170px;
+    height: 170px;
+}
+
+/*工作模式 -- end*/
+/*拍照间隔 -- start*/
+.an-button-dw .sj, .an-button .sj {
+    background: url("/images/wlyun/sj-bg.png") no-repeat center center;
+    width: 113px;
+    height: 52px;
+    margin: 0 auto;
+    margin-top: 42px;
+    font-size: 20px;
+    line-height: 52px;
+}
+
+.an-button .sj:hover {
+    width: 112px;
+    height: 51px;
+}
+
+.an-button-dw .pet {
+    background: url("/images/wlyun/pzjg-dw.png") no-repeat 70px center;
+    height: 70px;
+}
+
+.an-button .pet {
+    background: url("/images/wlyun/nl-big.png") no-repeat 70px center;
+    height: 70px;
+}
+
+/*拍照间隔 -- end*/
+/*联网信息 -- start*/
+.an-button-dw .lw .lw_bg {
+    height: 170px;
+    height: 170px;
+    background: url("/images/wlyun/lw_dw110.png") no-repeat center center;
+    position: relative;
+}
+
+.an-button .lw .lw_bg {
+    height: 170px;
+    height: 170px;
+    background: url("/images/wlyun/lw-line.png") no-repeat center center;
+    position: relative;
+}
+
+.an-button-dw .lw .lw_bg p, .an-button .lw .lw_bg p {
+    width: 85px;
+    height: 85px;
+    top: 2px;
+    position: absolute;
+}
+
+.an-button-dw .lw .lw_bg .dn {
+    background: url("/images/wlyun/lw_dw01.png") no-repeat 40px 32px;
+}
+
+.an-button-dw .lw .lw_bg .wf {
+    background: url("/images/wlyun/lw_dw02.png") no-repeat 15px 30px;
+    left: 85px;
+}
+
+.an-button .lw .lw_bg .dn-check {
+    background: url("/images/wlyun/yxx-an.png") no-repeat 14px 12px;
+}
+
+.an-button .lw .lw_bg .wf {
+    left: 85px;
+}
+
+.an-button .lw .lw_bg .wf-check {
+    background: url("/images/wlyun/wifi-an.png") no-repeat 0px 12px;
+}
+
+.an-button-dw .lw .lw_bg .four, .an-button .lw .lw_bg .four {
+    left: 85px;
+    top: 85px;
+}
+
+.an-button .lw .lw_bg .four-check {
+    background: url("/images/wlyun/4g-an.png") no-repeat 0px 0px;
+    color: #ffffff;
+}
+
+.an-button .lw .lw_bg .four-check span {
+    color: #ffffff;
+}
+
+.an-button-dw .lw .lw_bg .three, .an-button .lw .lw_bg .three {
+    left: 0;
+    top: 85px;
+}
+
+.an-button .lw .lw_bg .three-check {
+    background: url("/images/wlyun/3g-an.png") no-repeat 14px 0px;
+}
+
+.an-button .lw .lw_bg .three-check span {
+    color: #ffffff;
+}
+
+.an-button-dw .lw .lw_bg .four .ll,
+.lw .lw_bg .three .ll, .an-button .lw .lw_bg .four .ll {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+.an-button-dw .lw .lw_bg .four .type,
+.lw .lw_bg .three .type, .an-button .lw .lw_bg .four .type {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-indent: 10px;
+    font-weight: 600;
+}
+
+.an-button-dw .lw .lw_bg .three .type, .an-button .lw .lw_bg .three .type {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.an-button-dw .lw .lw_bg .three .ll, .an-button .lw .lw_bg .three .ll {
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*联网信息 -- end*/
+/*重启恢复 -- start*/
+.an-button-dw .cq .cq-gzdw, .an-button .cq .cq-gzdw {
+    background: url("/images/wlyun/gzbg001.png") no-repeat center center;
+    width: 170px;
+    height: 170px;
+}
+
+.an-button-dw .cq .gk i {
+    display: block;
+    background: url("/images/wlyun/cq_yc1.png") no-repeat center center;
+    position: absolute;
+    top: 35px;
+    left: 47px;
+}
+
+.an-button .cq .gk i {
+    display: block;
+    background: url("/images/wlyun/cq-lw.png") no-repeat center center;
+    position: absolute;
+    top: 35px;
+    left: 47px;
+}
+
+.an-button-dw .cq .sh i {
+    display: block;
+    background: url("/images/wlyun/cq_yc0.png") no-repeat center center;
+    position: absolute;
+    top: 97px;
+    left: 47px;
+}
+
+.an-button .cq .sh i {
+    display: block;
+    background: url("/images/wlyun/hf-lw.png") no-repeat center center;
+    /*position: absolute;*/
+    /*top: 97px;*/
+    /*left: 47px;*/
+    width: 32px;
+    height: 33px;
+}
+
+.an-button .cq .gk:hover i, .an-button .cq .sh:hover i {
+    width: 30px;
+    height: 31px;
+}
+
+.an-button-dw .cq .gk span, .an-button .cq .gk span {
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 82px;
+    font-size: 14px;
+
+}
+
+.an-button-dw .cq .sh span, .an-button .cq .sh span {
+    display: block;
+    position: absolute;
+    top: 105px;
+    left: 82px;
+    font-size: 14px;
+
+}
+
+.an-button-dw .sh span, .an-button .sh span {
+    display: block;
+    position: absolute;
+    top: 105px;
+    left: 95px;
+    font-size: 14px;
+}
+
+/*重启恢复 -- end*/
+
+/*绑定手机号 -- start*/
+.an-button-dw .ff {
+    background: url("/images/wlyun/bsj-dw00.png") no-repeat center center;
+    width: 170px;
+    height: 170px;
+
+}
+
+.an-button .ff {
+    background: url("/images/wlyun/mob.png") no-repeat center center;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.an-button .ff:hover {
+    width: 168px;
+    height: 168px;
+}
+
+/*绑定手机号 -- end*/
+
+/*设备位移 -- start*/
+.an-button-dw .tb {
+    height: 85px;
+    background: url("/images/wlyun/map-dw00.png") no-repeat 55px bottom;
+    text-align: center;
+}
+
+.an-button .tb {
+    height: 85px;
+    background: url("/images/wlyun/wzxx.png") no-repeat 55px bottom;
+    text-align: center;
+}
+
+.an-button-dw .jw, .an-button .jw {
+    height: 85px;
+}
+
+.an-button-dw .jw p, .an-button .jw p {
+    width: 144px;
+    margin: 0 auto;
+}
+
+.an-button-dw .jw p span, .an-button .jw p span {
+    display: inline-block;
+}
+
+.an-button-dw .jw .name, .ds, .an-button .jw .name {
+    width: 60px;
+    text-align: right;
+
+}
+
+.an-button-dw .jw .ds .an-button .jw .ds {
+    width: 70px;
+    text-align: right;
+}
+
+/*设备位移 -- end*/
+.an-button-dw a .bj, .an-button a .bj {
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 0px;
+    background: url("/images/wlyun/red-bg.png") no-repeat center center;
+}
+
+/*电量信息 -- start*/
+.an-button-dw .dl .top-tb {
+    height: 85px;
+    background: url("/images/wlyun/dc-dw001.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-20 {
+    height: 85px;
+    background: url("/images/wlyun/dl20.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-25 {
+    height: 85px;
+    background: url("/images/wlyun/dl25.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-40 {
+    height: 85px;
+    background: url("/images/wlyun/dl40.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-60 {
+    height: 85px;
+    background: url("/images/wlyun/dl60.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-80 {
+    height: 85px;
+    background: url("/images/wlyun/dl80.png") no-repeat center bottom;
+}
+
+.an-button .dl .top-tb-100 {
+    height: 85px;
+    background: url("/images/wlyun/dl100.png") no-repeat center bottom;
+}
+
+.an-button-dw .dl .top-tb-100 {
+    height: 85px;
+    background: url("/images/wlyun/dc-dw001.png") no-repeat center bottom;
+}
+
+.an-button-dw .dl .sy, .an-button .dl .sy {
+    height: 85px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+/*电量信息 -- end*/
+
+/*手机卡号 -- start*/
+
+.an-button-dw .mob .bg-line, .an-button .mob .bg-line {
+    height: 170px;
+    width: 170px;
+    background: url("/images/wlyun/liner.png") no-repeat center center;
+}
+
+.an-button .mob .bg-line {
+    cursor: pointer;
+}
+
+.an-button .mob .bg-line:hover * {
+    color: red;
+}
+
+/*手机卡号 -- end*/
+.an-button-dw .mob .top-content, .an-button .mob .top-content {
+    height: 85px;
+    text-align: center;
+}
+
+.an-button-dw .mob .bottom-content, .an-button .mob .bottom-content {
+    height: 85px;
+    text-align: center;
+
+}
+
+.an-button-dw .tc, .an-button .tc {
+    border-radius: 10px;
+    behavior: url(/css/PIE.htc);
+}
+
+/*设备管理*/
+
+/*弹框*/
+.bd-mob {
+    position: absolute;
+    width: 405px;
+    height: 240px;
+    top: 265px;
+    left: 509px;
+    z-index: 100000;
+}
+
+.bd-mob .theader {
+    height: 42px;
+    line-height: 42px;
+    background-color: #1c8be4;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.bd-mob .title {
+    margin-left: 15px;
+    float: left;
+}
+
+.bd-mob .gb {
+    margin-right: 15px;
+    float: right;
+    height: 42px;
+    cursor: pointer;
+}
+
+.bd-mob .gb img {
+    margin-top: 10px;
+}
+
+.bd-mob .tbody {
+    height: 194px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.bd-mob .tbody .content {
+    width: 300px;
+    height: 35px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    margin-top: 50px;
+}
+
+.bd-mob .content .name {
+    width: 93px;
+    height: 100%;
+    background: #e6e6e6;
+    line-height: 35px;
+    text-align: center;
+    float: left;
+}
+
+.bd-mob .content input {
+    float: left;
+    border: none;
+    height: 35px;
+    width: 206px;
+}
+
+.sj-mob .content input {
+    float: left;
+    border: none;
+    height: 35px;
+    width: 150px;
+}
+
+.sur {
+    height: 35px;
+    width: 55px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #347ab6;
+    color: #FFFFFF;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    behavior: url(/css/PIE.htc);
+}
+
+.tbody .time {
+    background: #e6e6e6;
+    float: left;
+    width: 42px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.opt .up img {
+    margin-top: 2px;
+}
+
+.dd {
+    width: 120px;
+    position: absolute;
+    top: 0;
+    height: 70px;
+    left: -120px;
+    background: #317dd2;
+}
+
+#de-sb {
+    margin-top: 20px;
+}
+
+#de-sb input {
+    width: 100px;
+    height: 30px;
+    background: url("/images/wlyun/fengsj/b-xl.png") no-repeat 80px center;
+    background-color: #ffffff;
+    text-indent: 20px;
+}
+
+#de-sb ul li {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.sj-mobs .content input {
+    float: left;
+    border: none;
+    height: 35px;
+    width: 150px;
+}
+
+.dl .top-tb {
+    height: 85px;
+    background: url("/images/wlyun/dl25.png") no-repeat center bottom;
+}
+
+.dl .sy {
+    height: 85px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    /*color: #0e487c;*/
+}
+
+.lw .lw_bg {
+    height: 170px;
+    height: 170px;
+    background: url("/images/wlyun/liner.png") no-repeat center center;
+    position: relative;
+    color: #1a81df;
+}
+
+.lw .lw_bg .tops p {
+    width: 85px;
+    height: 85px;
+    top: 2px;
+    position: absolute;
+}
+
+.lw_bg .tops {
+    height: 85px;
+}
+
+.lw_bg .lw_bottom {
+    height: 85px;
+    text-align: center;
+    color: #545454;
+}
+
+.lw_bg .lw_bottom .lx {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.lw_bg .lw_bottom .ms {
+    font-size: 18px;
+}
+
+.lw_bg .xzl {
+    color: #FFFFFF;
+}
+
+.lw .lw_bg .dn {
+    background: url("/images/wlyun/lw_01.png") no-repeat 45px 30px;
+}
+
+.lw .lw_bg .wf {
+    background: url("/images/wlyun/lw_02.png") no-repeat 10px 30px;
+    left: 85px;
+}
+
+.lw .lw_bg .four {
+    left: 85px;
+    top: 85px;
+}
+
+.lw .lw_bg .three {
+    left: 0;
+    top: 85px;
+}
+
+.lw .lw_bg .four .ll, .lw .lw_bg .three .ll {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+.lw .lw_bg .four .type, .lw .lw_bg .three .type {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-indent: 10px;
+    font-weight: 600;
+}
+
+.lw .lw_bg .three .type {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.lw .lw_bg .three .ll {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.mob .bg-line {
+    height: 170px;
+    width: 170px;
+    background: url("/images/wlyun/liner.png") no-repeat center center;
+}
+
+.mob .top-content {
+    height: 85px;
+    text-align: center;
+    color: #1a81df;
+}
+
+.mob .bottom-content {
+    height: 85px;
+    text-align: center;
+    color: #1a81df;
+}
+
+.tc {
+    border-radius: 10px;
+    behavior: url(/css/PIE.htc);
+}
+
+.content .download {
+    text-align: center;
+    font-size: 14px;
+    color: #4280d3;
+}
+
+.content .download span {
+    cursor: pointer;
+}
+
+.content .download img {
+    margin-left: 5px;
+}
+
+.content .download:hover {
+    font-size: 16px;
+}
+
+.pot-list .selects ul li {
+    width: auto;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.flow-mode .selects ul li {
+    text-align: left;
+    text-indent: 5px;
+    width: 75px;
+    height: 23px;
+    line-height: 23px;
+}
+
+.pot-list .selects ul {
+    border: 1px solid #ccc;
+}
+
+.tiet-sf .name-input input {
+    text-indent: 20px;
+}
+
+.data-center .selects {
+    float: right;
+}
+
+.data-center .selects img {
+    height: auto;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.bigphoto .img {
+    float: left;
+}
+
+.device .content {
+    width: 1090px;
+    margin-left: 55px;
+    margin: 0 auto;
+}
+
+.tc .content li span {
+    display: inline-block;
+    width: 173px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+html .pet .rollbar-path-vertical .rollbar-handle {
+    width: 10px;
+    left: -3px;
+    opacity: 1;
+    cursor: default;
+}
+
+html .pet .rollbar-path-vertical {
+    background: #cdcbcc;
+    right: 4px;
+    width: 6px;
+    cursor: default;
+}
+
+.qx-content {
+    width: 1270px;
+    margin-left: 16px;
+    position: relative
+}
+
+.qx-content .top-nr {
+    right: 0;
+    top: -22px;
+}
+
+.qx-content .right-button img {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+
+}
+
+.left-button a {
+    height: 38px;
+    width: 80px;
+    border: 1px solid #9abeec;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+    background: #ffffff;
+    cursor: pointer;
+    margin-right: -1px;
+}
+
+.left-button .active {
+    background: #1d8ee6;
+    color: #FFFFFF;
+}
+
+.pet_qx .top-nr .right-button {
+    position: relative;
+    height: 70px;
+    float: right;
+    line-height: 70px;
+    color: #ffffff;
+    background-color: #1e8fe6;
+    padding: 0 7px;
+    text-align: center;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+}
+
+.xz {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.xz .left-xz {
+    float: left;
+}
+
+.right-xz {
+    float: right;
+    margin-right: 140px;
+}
+
+.left-xz .sec {
+    width: 80px;
+    height: 20px;
+    border: 1px solid #9abeec;
+    line-height: 20px;
+    float: left;
+    margin-right: -1px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.xz .setc {
+    float: right;
+    margin-left: 21px;
+}
+
+.xz .name-input input {
+    height: 20px;
+    text-indent: 20px;
+}
+
+.xz .selects ul li {
+    text-indent: 20px;
+    text-align: left;
+}
+
+.xz .selects img {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 21px;
+}
+
+.right-xz li {
+    float: right;
+    width: 48px;
+    height: 20px;
+    border: 1px solid #9abeec;
+    margin-right: -1px;
+    line-height: 20px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.right-xz .active {
+    background: #1a8be7;
+    color: #ffffff;
+}
+
+.left-xz .active {
+    color: #ffffff;
+    background: #1d8ee6;
+}
+
+.qx {
+    margin-top: 12px;
+    width: 950px;
+    float: left;
+    height: 360px;
+}
+
+.bottom-sex li {
+    width: 195px;
+    height: 24px;
+    margin-top: 2px;
+}
+
+.bottom-sex .one {
+    background: #2ec7c9;
+}
+
+.bottom-sex .two {
+    background: #b6a2de;
+}
+
+.bottom-sex .four {
+    background: #5ab1ef;
+}
+
+.bottom-sex .five {
+    background: #ffb980;
+}
+
+.bottom-sex .six {
+    background: #d87a80;
+}
+
+.bottom-sex li p {
+    float: left;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 7px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bottom-sex {
+    float: left;
+    margin-top: 12px;
+    height: 360px;
+    padding-right: 20px
+}
+
+#dialog {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.photo .details {
+    height: 600px;
+}
+
+.photo .datail-img {
+    width: 558px;
+    height: 412px;
+    margin: 19px 0 10px 20px;
+    position: relative;
+}
+
+.photo .discrip {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    bottom: 0;
+}
+
+.photo .discrip span {
+    color: #fff;
+    line-height: 26px;
+    margin: 0 15px;
+}
+
+.photo .discrip span {
+    color: #fff;
+    line-height: 26px;
+    margin: 0 15px;
+}
+
+.photo .but-viw-mq {
+    background: url("/images/wlyun/mq/but-viwe-x.png");
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    cursor: pointer;
+    display: block;
+}
+
+.photo .autce {
+    width: 558px;
+    margin: 20px auto;
+}
+
+.photo .discript .auter-show {
+    color: #468df4;
+    border-bottom: 1px solid #B7cfef;
+    font-size: 10px;
+}
+
+.photo .discript .autce-d {
+    font-size: 14px;
+    color: #5C5959;
+    display: block;
+    margin: 10px;
+    text-indent: 17px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.photo .fab {
+    margin-bottom: 20px;
+}
+
+.photo .but-viw-mq {
+    background: url("/images/wlyun/mq/but-viwe-x.png");
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    cursor: pointer;
+    display: block;
+}
+
+.photo #simplemodal-container {
+    height: 600px;
+}
+
+.photo .modal-but-close {
+    background: url("/images/wlyun/mq/model-but.png") no-repeat;
+    cursor: pointer;
+    z-index: 10003;
+    width: 32px;
+    height: 27px;
+    position: absolute;
+    top: -12px;
+    right: -14px;
+}
+
+.photo .details .rollbar-path-vertical {
+    top: 16px !important;
+    height: 578px !important;
+}
+
+.photo html .rollbar-path-vertical {
+    background: #cdcbcc;
+    right: 7px;
+    width: 6px;
+    cursor: default;
+}
+
+.photo #simplemodal-overlay {
+    background: #000;
+}
+
+.contain .bgimg {
+    width: 1270px;
+    margin-top: 30px;
+    margin-left: 5px;
+    position: relative;
+    height: auto;
+    margin-left: 60px
+}
+
+.contain .bgimg .bg-imgs {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.port-bg {
+    position: absolute;
+    width: 400px;
+    height: 578px;
+    top: 13px;
+    right: 20px;
+}
+
+/*1*/
+.port-bg .toop {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    height: 54px;
+    background: #1774da;
+    line-height: 45px;
+}
+
+.show-ss {
+    background: #eceeef;
+    filter: alpha(opacity=90);
+    -moz-opacity: .9;
+    opacity: .9;
+}
+
+.show-ss dl {
+    width: 400px;
+    height: 60px;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+/*1*/
+.show-ss dl dt, .show-ss dl dd {
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+
+.show-ss .disc {
+    margin: 20px 15px 0 20px;
+    width: 85px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/*1*/
+.show-ss .serc {
+    font-size: 24px;
+    margin: 15px 2px;
+    text-align: left;
+}
+
+.show-ss .emss {
+    margin: 25px 0 0 13px;
+    text-align: left;
+    position: absolute;
+    right: 85px;
+}
+
+.show-ss .dc {
+    margin-top: 25px;
+    position: absolute;
+    right: 50px;
+}
+
+.show-ss .wl {
+    margin-top: 25px;
+    position: absolute;
+    right: 25px;
+}
+
+#ascrail2000 {
+    background: #cdcbcc;
+    border-radius: 5px;
+}
+
+.scene #ascrai12000 {
+    width: 10px;
+}
+
+.toop div {
+    width: 120px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.toop .button {
+    cursor: pointer;
+}
+
+.serc .hight {
+    color: red;
+}
+
+.serc .low {
+    color: #1767b9;
+}
+
+.serc .dw {
+    font-size: 14px;
+}
+
+.nav img {
+    width: 25px;
+    margin-top: 14px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.button img {
+    position: absolute;
+    top: 54px;
+    z-index: 100;
+    left: 50px;
+}
+
+.show-ss dl .name {
+    margin: 20px 0px 0 5px;
+    font-size: 14px;
+    width: 200px;
+    text-align: left;
+}
+
+#dk dl dt {
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#dk dl dt img {
+    width: 37px;
+}
+
+html .scene .content-all .content {
+    padding-top: 0;
+    margin-top: 0
+}
+
+.contain {
+    margin: 0 auto;
+    position: relative;
+}
+
+.shuifei .title {
+    height: 62px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    width: 1270px;
+    margin: 0 auto;
+}
+
+.tiet-sf {
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.tiet-sf h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    font-family: 微软雅黑;
+}
+
+.tiet-sf .selects {
+    position: absolute;
+    left: 76px;
+    top: -6px;
+    cursor: pointer;
+}
+
+.tiet-sf .btn-set-sf {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    right: 76px;
+    border: 1px solid #1b8ee0;
+    color: #1b8ee0;
+    text-align: center;
+    line-height: 37px;
+    top: -6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shuifei table td span {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 26px;
+    margin-left: 6px;
+}
+
+.content-tabele {
+    width: 1210px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.content-tabele table tbody tr {
+    border-top: 1px solid #ccc;
+    height: 40px;
+}
+
+.content-tabele table th {
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.shuifei span .edite {
+    background: url(/images/sf_img/edit.png) no-repeat;
+}
+
+.shuifei span.close-edit {
+    background: url(/images/sf_img/delete.png) no-repeat;
+}
+
+.shuifei span.operated {
+    background: url(/images/sf_img/play.png) no-repeat;
+}
+
+.content-tabele table td input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.shuifei #dialog1, .shuifei #dialog2 {
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #DACBCB;
+    position: relative;
+    width: 690px;
+    display: none;
+}
+
+.shuifei #dialog1 .head, .shuifei #dialog2 .head {
+    position: absolute;
+    height: 40px;
+    width: 670px;
+    top: 0;
+    font-size: 16px;
+    padding-left: 20px;
+    background-color: #f5f5f5;
+    line-height: 41px;
+}
+
+.shuifei .close-mod {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    background: url(/images/sf_img/diacolse.png) no-repeat;
+    border: none;
+    right: 10px;
+    cursor: pointer;
+    top: 10px;
+}
+
+.shuifei .dig-tie {
+    margin-top: 22px;
+    position: relative;
+    padding: 0 33px 0 20px;
+}
+
+.shuifei .dig-tie h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.shuifei table.dia1-tab {
+    margin-top: 10px;
+    border-bottom: none;
+    border-top: none;
+    background-color: #fafafa;
+}
+
+.shuifei table.dia1-tab tr {
+    height: 40px;
+}
+
+.addscr {
+    border: 1px solid #ccc;
+    padding-bottom: 5px;
+    background-color: #fafafa;
+}
+
+.shuifei .addscr i {
+    display: block;
+    cursor: pointer;
+    background: url(/images/sf_img/edi_open.png) no-repeat;
+    width: 92px;
+    height: 20px;
+    margin: 6px 13px;
+}
+
+.shuifei .addscr i.downit {
+    background: url(/images/sf_img/edi_up.png) no-repeat;
+}
+
+.addscr span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #515151;
+    margin-left: 30px;
+}
+
+.shuifei #dialog1 .scroll-box {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.shuifei .cotrol_btn {
+    background-color: #fafafa;
+    margin: 13px 0 0 73px;
+}
+
+.shuifei .cotrol_btn div {
+    margin-bottom: 14px;
+    min-height: 26px;
+}
+
+.shuifei .cotrol_btn div label {
+    font-size: 14px;
+}
+
+.shuifei .cotrol_btn div input[type=text] {
+    width: 133px;
+    height: 24px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    margin-left: 12px;
+    margin-right: 14px;
+}
+
+.shuifei .open-fa {
+    overflow: hidden;
+    width: 330px;
+    height: 30px;
+    position: relative;
+    left: 111px;
+    background-color: #fafafa;
+    padding-left: 20px;
+    margin-top: -18px;
+}
+
+.shuifei .check_dc {
+    position: relative;
+}
+
+.shuifei .check_dc .open-fa input {
+    zoom: 120%;
+    float: left;
+    margin-top: 2px;
+}
+
+.shuifei .tbn-more {
+    position: absolute;
+    right: 21px;
+    top: 5px;
+    width: 40px;
+    color: #999;
+    cursor: pointer;
+}
+
+.shuifei .tbn-more span {
+    background: url(/images/sf_img/more.png) no-repeat;
+    width: 10px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    right: 0;
+    float: right;
+    margin: -11px 3px;
+}
+
+.sftex input.text-sf {
+    width: 40px;
+    height: 24px;
+}
+
+.cotrol_btn .group-btn span {
+    width: 78px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-right: -114px;
+    border: 1px solid #1b8ee0;
+    color: #1b8ee0;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    margin-left: 152px;
+    font-size: 14px;
+}
+
+.open-fa label.spache {
+    font-size: 14px;
+    float: left;
+    margin: 0 22px 14px 8px;
+}
+
+.cotrol_btn .sftex span {
+    margin-left: 9px;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.cotrol_btn .sftex input[type=text] {
+    width: 33px;
+    height: 20px;
+    margin: 0 3px;
+}
+
+.group-btn {
+    overflow: hidden;
+}
+
+.addscr .warp-hide {
+    display: none;
+}
+
+.shuifei .check_dc .check-hide {
+    overflow: auto;
+    height: auto;
+}
+
+.shuifei .tbn-more span.less {
+    background: url(/images/sf_img/less.png) no-repeat;
+}
+
+.shuifei .tbn-more em {
+    font-style: normal;
+}
+
+.shuifei .oped {
+    background-color: #ffea99;
+}
+
+.content-tabele table tbody tr:hover {
+    background-color: #ffe57f;
+}
+
+.shuifei #simplemodal-overlay {
+    background: #000;
+}
+
+.shuifei .simplemodal-container {
+    height: 100% !important;
+    top: 80px !important;
+}
+
+.tiet-sf .btn-set-sf:hover, .group-btn span:hover {
+    color: #fff;
+    background-color: #1b8ee0;
+}
+
+.tiet-sf .content-tabele table, table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+}
+
+.content-tabele table td, table.dia1-tab td {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    border-top: 1px solid #ccc;
+    cursor: default;
+}
+
+.shuifei .page span:hover, .page span.current {
+    background-color: #1b8ee0;
+    color: #fff;
+}
+
+.shuifei .scroll-box .rollbar-path-vertical, .shuifei .scroll-box .rollbar-path-vertical .rollbar-handle {
+    position: absolute;
+}
+
+.check_dc span, .eneider {
+    margin-left: 9px;
+    font-size: 14px;
+}
+
+.close-mod:hover {
+    background: url(/images/sf_img/diacolsehover.png) no-repeat;
+}
+
+.content-tabele table .false-oper input {
+    background: transparent;
+    border: none;
+}
+
+.oped .palying .edite {
+    display: none;
+}
+
+.palying .operated {
+    background: url(/images/sf_img/stop.png) no-repeat;
+}
+
+.shuifei .page .pagination a {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #1b8ee0;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    line-height: 32px;
+    margin-right: 13px;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+.shuifei .page .pagination a.current {
+    background-color: #1b8ee0;
+    border-color: #1b8ee0 !important;
+}
+
+.shuifei .page .pagination a.pre-page, .page .pagination a.next-page {
+
+    width: 80px;
+    height: 32px;
+}
+
+.shuifei .page .pagination .syhao {
+    border: none;
+    cursor: default;
+}
+
+.shuifei .page .pagination .syhao:hover {
+    text-decoration: none;
+}
+
+.title .top-title {
+    line-height: 62px;
+}
+
+.title .check {
+    position: absolute;
+}
+
+.title .check .cl {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #bfbfbf;
+    float: left;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+.title .kz-q {
+    bottom: 0px;
+    right: 204px;
+    cursor: pointer;
+}
+
+.title .kz-h {
+    bottom: 0px;
+    right: 114px;
+    cursor: pointer;
+}
+
+.check span {
+    display: block;
+    float: left;
+    font-size: 14px;
+}
+
+.shuifei .list {
+    width: 16px;
+    height: 12px;
+    background: url("/images/list.png") no-repeat center center;
+    position: absolute;
+    bottom: 2px;
+    right: 72px;
+    cursor: pointer;
+}
+
+.check .seleced {
+    background: url("/images/wlyun/icon_ture.png") no-repeat;
+}
+
+.shuifei .name-input input {
+    width: 138px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.shuifei .selects img {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 8px;
+}
+
+.shuifei .selects ul {
+    top: 31px;
+    border: 1px solid #ccc;
+}
+
+.shuifei .selects ul li {
+    width: 138px;
+}
+
+.shuifei .pagination {
+    margin-top: 15px;
+}
+
+.tiet-sf .selects ul li {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.fp-panal .selects {
+    margin-left: 15px;
+    margin-top: 260px;
+    position: relative;
+}
+
+.fp-panal .selects img {
+    height: 18px;
+}
+
+.pos-pot .pot-list .pos-item {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #dbdbdb;
+    overflow: visible;
+    cursor: pointer;
+
+}
+
+.pos-pot .pot-list .pos_pot_run, .pos-pot .pot-list .pos_pot_cancel {
+    right: 30px;
+    top: 5px;
+}
+
+.sensor_data {
+    width: 181px;
+    border: 1px solid #fff;
+    height: 600px;
+    background: url(/images/side_sensor_data_bg_55.png) repeat;
+}
+
+.sensor_data li {
+    height: auto;
+    position: relative;
+    padding-left: 70px;
+}
+
+.sensor_data li img {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+}
+
+.sensor_data li span {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+    padding-top: 25px;
+}
+
+.sensor_data li p {
+    font-size: 13px;
+    color: #333;
+}
+
+.sensor_data li strong {
+    font-size: 20px;
+    padding-right: 5px;
+    font-weight: 400;
+}
+
+.sensor_data .red {
+    color: #fe0000;
+}
+
+.video_stage {
+    width: 720px;
+    height: 540px;
+    position: absolute;
+    left: 186px;
+    top: 0px;
+    z-index: 10;
+}
+
+.video_stage #video {
+    position: relative;
+    z-index: 10;
+    width: 710px;
+    height: 490px;
+    background-color: #000;
+    border: 5px solid #000;
+}
+
+.video_ext {
+    width: 100%;
+    height: 40px;
+    background: #303030;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 10;
+}
+
+.ext_videos a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin: 8px 6px;
+}
+
+.v1 {
+    background: url(/images/video/v1.png) no-repeat center center;
+}
+
+.v4 {
+    background: url(/images/video/v4.png) no-repeat center center;
+}
+
+.v9 {
+    background: url(/images/video/v9.png) no-repeat center center;
+}
+
+.v16 {
+    background: url(/images/video/v16.png) no-repeat center center;
+}
+
+.v1.active, .v1:hover {
+    background: url(/images/video/v1-hover.png) no-repeat center center;
+}
+
+.v4.active, .v4:hover {
+    background: url(/images/video/v4-hover.png) no-repeat center center;
+}
+
+.v9.active, .v9:hover {
+    background: url(/images/video/v9-hover.png) no-repeat center center;
+}
+
+.v16.active, .v16:hover {
+    background: url(/images/video/v16-hover.png) no-repeat center center;
+}
+
+.fullscreen {
+    background: url(/images/video/fullscreen.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 22px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.fullscreen.active, .fullscreen:hover {
+    background: url(/images/video/fullscreen-hover.png) no-repeat center center;
+}
+
+.flow-mode {
+    position: absolute;
+    right: 168px;
+    top: 11px;
+}
+
+.down_load {
+    width: 16px;
+    height: 16px;
+    background: url("/images/video/v2/down_cj.png");
+    position: absolute;
+    right: 114px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.down_load:hover {
+    background: url("/images/video/v2/down_cj_h.png");
+}
+
+.dd ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.dd ul li {
+    margin-top: 6px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 90px;
+    height: 26px;
+    border-radius: 5px;
+    behavior: url(/css/PIE.htc);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dd ul li a {
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+}
+
+.dd ul li.ac_tive a {
+    color: #000000;
+}
+
+.dd .rollbar-path-vertical {
+    background: #317dd2;
+}
+
+.dd .rollbar-handle {
+    background: #317dd2;
+}
+
+.dd .ac_tive {
+    color: #000000;
+    background: #add1f8;
+}
+
+.dd .ac_tive:hover {
+    background: #add1f8;
+}
+
+.dd ul li:hover {
+    background: #639ddd;
+}
+
+.set_control {
+    width: 335px;
+    height: 540px;
+    background: url(/images/side_sensor_data_bg_55.png) repeat;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.set_control li {
+    position: relative;
+    height: 70px;
+}
+
+.set_control .name {
+    position: absolute;
+    width: 56px;
+    line-height: 60px;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    margin-left: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.set_control .set_mode {
+    position: absolute;
+    left: 87px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.set_control .set_btns {
+    position: absolute;
+    left: 168px;
+    top: 18px;
+}
+
+.set_mode {
+    width: 80px;
+    height: 30px;
+    position: relative;
+    background: url(/images/video/ctrl_mode_panel.png) no-repeat center center;
+}
+
+.set_mode_slider {
+    width: 36px;
+    height: 20px;
+    position: absolute;
+    background: url(/images/video/ctrl_mode_slider.png) no-repeat center center;
+}
+
+.mode_auto {
+    left: 40px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.set_mode .mode_manual {
+    left: 5px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.set_btns {
+    width: 180px;
+    height: 22px;
+}
+
+.set_btns span {
+    display: inline-block;
+    width: 48px;
+    height: 23px;
+    float: left;
+    color: #000;
+    text-align: center;
+    line-height: 22px;
+    background: url(/images/video/ctrl_btns.png) no-repeat center top;
+    position: relative;
+}
+
+.set_btns i {
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    background: url(/images/video/ctrl_close.png) no-repeat center center;
+}
+
+.set_btns_manual span:hover i, .set_btns .on i, .set_btns .cur {
+    background: url(/images/video/ctrl_open.png) no-repeat center center;
+}
+
+.set_btns span:first-child {
+    background: url(/images/video/ctrl_btns.png) no-repeat left top;
+}
+
+.set_btns span:last-child {
+    background: url(/images/video/ctrl_btns.png) no-repeat right top;
+}
+
+.set_btns_manual span:hover, .set_btns_manual span.on {
+    background: url(/images/video/ctrl_btns_active.png) no-repeat center top;
+    color: #fff;
+}
+
+.set_btns_manual span:first-child:hover, .set_btns span:first-child.on {
+    background: url(/images/video/ctrl_btns_active.png) no-repeat left top;
+    color: #fff;
+}
+
+.set_btns_manual span:last-child:hover, .set_btns span:last-child.on {
+    background: url(/images/video/ctrl_btns_active.png) no-repeat right top;
+    color: #fff;
+}
+
+.vv-panel {
+    z-index: -10;
+}
+
+.vv-control, .vv-loop {
+    width: 345px;
+    background: #303030;
+    height: 540px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.v-name {
+    width: 22px;
+    height: 115px;
+    position: absolute;
+    right: -22px;
+    top: 100px;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-align: center;
+    background: url(/images/video/btn-loop.png) no-repeat center center;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+.v-name i {
+    display: block;
+    width: 22px;
+    height: 26px;
+    background: url(/images/video/arrow-right-black.png) no-repeat center center;
+    margin-top: 10px;
+}
+
+.vv-loop .v-name {
+    top: 220px;
+}
+
+.active .v-name i {
+    background: url(/images/video/arrow-left-black.png) no-repeat 6px center;
+}
+
+.loop-active .vv-loop .v-name i, .control-active .vv-control .v-name i {
+    background: url(/images/video/arrow-left-white.png) no-repeat 6px center;
+}
+
+.vv-loop ul {
+    list-style: none;
+    padding-top: 0px;
+}
+
+.vv-loop ul li {
+    display: block;
+}
+
+.vv-loop ul li:after {
+    clear: both;
+}
+
+.vv-loop ul li label {
+    float: left;
+    width: 115px;
+    text-align: right;
+    color: #d0d0d0;
+    padding-right: 5px;
+}
+
+.vv-loop select, .vv-loop input {
+    display: block;
+    float: left;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #999;
+    background: #fff;
+}
+
+.vv-loop .vv-search {
+    display: block;
+    width: 68px;
+    height: 26px;
+    background: url(/images/video/btn.png) no-repeat center center;
+    border: none;
+    margin: 20px auto;
+}
+
+.vv-loop .vv-search:hover {
+    background: url(/images/video/btn-hover.png) no-repeat center center;
+    cursor: pointer;
+}
+
+.vv-loop .download_list {
+    width: 260px;
+    height: 240px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.download_list {
+    color: #06c;
+}
+
+.download_list a {
+    color: #167400;
+}
+
+.download_list table {
+    margin: 10px 8px;
+}
+
+.download_list tr:hover {
+    background: #e5e5e5;
+}
+
+.download_list tr td {
+    width: 110px;
+    line-height: 20px;
+    text-indent: 5px;
+}
+
+.download_list tr td:first-child {
+    width: 30px;
+    text-align: right;
+}
+
+.download_list tr td:last-child {
+    width: 75px;
+    text-align: right
+}
+
+.vv-play {
+    background: url(/images/video/play/play.png) no-repeat 15px center;
+    background-color: #444444;
+}
+
+.vv-pause {
+    background: url(/images/video/play/pause.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.vv-close {
+    background: url(/images/video/play/stop.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.vv-next {
+    background: url(/images/video/play/next.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.vv-previous {
+    background: url(/images/video/play/previous.png) no-repeat center center;
+    background-color: #444444;
+}
+
+.vv-play.active, .vv-play:hover {
+    background-color: #000000
+}
+
+.vv-stop.active, .vv-stop:hover {
+    background-color: #000000
+}
+
+.vv-close.active, .vv-close:hover {
+    background-color: #000000
+}
+
+.vv-pause.active, .vv-pause:hover {
+    background-color: #000000
+}
+
+.vv-next.active, .vv-next:hover {
+    background-color: #000000
+}
+
+.vv-previous.active, .vv-previous:hover {
+    background-color: #000000
+}
+
+.vv-panel .panel-footer {
+    position: absolute;
+    bottom: -41px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 40px;
+    width: 256px;
+}
+
+.v-download-plugin {
+    display: inline-block;
+    background: url(/images/video/download.png) no-repeat left center;
+    padding-left: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.v-download-plugin:hover {
+    background: url(/images/video/download-hover.png) no-repeat left center;
+    color: #ff7220;
+}
+
+.direction-control {
+    width: 180px;
+    height: 180px;
+    background: url(/images/video/control/bg.png) no-repeat center center;
+    border: none;
+    margin: 30px auto 12px;
+}
+
+.direction-control td {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.direction-control td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.d1:hover {
+    background: url(/images/video/control/1-hover.png) no-repeat center center;
+}
+
+.d2 {
+    background: url(/images/video/control/2.png) no-repeat center center;
+}
+
+.video-sp2 html .rollbar-path-vertical .rollbar-handle {
+    width: 8px;
+    left: -3px;
+}
+
+.video-sp2 html .rollbar-path-vertical {
+    width: 4px;
+    background: #cbcaca;
+    right: 7px;
+}
+
+.video-sp2 html .rollbar-handle {
+    border: 1px solid #bfbfbf;
+}
+
+.video-sp2 html .channel-control .rollbar-path-vertical {
+    right: 4px;
+    background: #505050;
+}
+
+.video-sp2 html .channel-control .rollbar-path-vertical .rollbar-handle {
+    background: #999;
+    border: 1px solid #999;
+}
+
+.yushe_icon {
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    position: relative;
+    top: 4px;
+    background: url(/images/video/v2/reply-gray.png) no-repeat center center;
+    cursor: pointer;
+}
+
+.yushe_icon:hover {
+    background: url(/images/video/v2/reply.png) no-repeat center center;
+}
+
+.loop-active .vv-loop .v-name, .control-active .vv-control .v-name {
+    background: url(/images/video/btn-active.png) no-repeat -1px top;
+    color: #fff;
+}
+
+.control-active .vv-control, .loop-active .vv-loop {
+    z-index: 2;
+}
+
+.loop-active .vv-control, .control-active .vv-loop {
+    z-index: 1;
+}
+
+.icon-sx {
+    width: 11px;
+    height: 15px;
+    background: url(/images/video/icon_frsh.png) no-repeat;
+    position: absolute;
+    left: 71px;
+    top: 23px;
+    cursor: pointer;
+}
+
+.printscreen {
+    width: 19px;
+    height: 16px;
+    background: url("/images/video/v2/camera-hover.png");
+    position: absolute;
+    right: 68px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.printscreen:hover {
+    background: url(" /images/video/printscreen.png");
+
+}
+
+.flow-mode .selects ul {
+    top: 18px;
+    border: 1px solid #d7d7d7;
+
+}
+
+.video-sp2 .pos-pot .pot-list .pos-item {
+    width: 310px;
+    height: 30px;
+}
+
+.video-sp2 .pos-pot .pot-list .pos_pot_name {
+    background: url(/images/video/v2/border-ext2.png) no-repeat left bottom;
+    padding-bottom: 2px;
+    padding-left: 4px;
+}
+
+.video-sp2 .pos-pot .pot-list {
+    width: 320px;
+    height: 200px;
+}
+
+.video-sp2 .pos-pot .pot-list .pos_pot_run, .video-sp2 .pos-pot .pot-list .pos_pot_cancel {
+    right: 25px;
+}
+
+.video-sp2 .video-replay {
+    width: 260px;
+    height: 240px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.pos-item .selects img {
+    top: 6px;
+    height: 18px;
+}
+
+.video_ext .selects img {
+    height: 18px;
+}
+
+.pos-pot .new_pos_pot {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(/images/video/v2/btn_add.png) no-repeat center center;
+}
+
+.flow-mode .selects ul {
+    top: 18px;
+    border: 1px solid #d7d7d7;
+
+}
+
+.video-sp2 .pos-pot .pot-list .pos-item {
+    width: 310px;
+    height: 30px;
+}
+
+.video-sp2 .pos-pot .pot-list .pos_pot_name {
+    background: url(/images/video/v2/border-ext2.png) no-repeat left bottom;
+    padding-bottom: 2px;
+    padding-left: 4px;
+}
+
+.video-sp2 .pos-pot .pot-list {
+    width: 310px;
+    height: 200px;
+}
+
+.video-sp2 .pos-pot .pot-list .pos_pot_run {
+    right: 25px;
+}
+
+.video-sp2 .video-replay {
+    width: 260px;
+    height: 240px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.pos-item .selects img {
+    top: 6px;
+    height: 18px;
+}
+
+.video_ext .selects img {
+    height: 18px;
+}
+
+.pet_tj {
+    margin-top: 120px;
+    width: 1366px;
+}
+
+.contain .tablecont table {
+    border: none;
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    margin-bottom: 22px;
+}
+
+.contain .tablecont thead tr {
+    background: #FFFFFF;
+}
+
+.contain .tablecont table thead tr {
+    border: none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 40px;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+}
+
+.contain .tablecont table tbody tr {
+    background-color: #FFFFFF;
+}
+
+.contain .tablecont table tbody tr:hover {
+    background-color: #ededed;
+}
+
+.contain .tablecont table tr {
+    height: 38px;
+    border: 1px solid #cccccc;
+}
+
+.tablecont {
+    width: 1146px;
+    margin-top: 12px;
+
+}
+
+.contain .tablecont table th {
+    text-align: center;
+}
+
+.contain .tablecont .first {
+    text-align: left;
+    text-indent: 10px;
+}
+
+.contain .tablecont table td {
+    text-align: center;
+}
+
+.buttoons {
+    width: 112px;
+    height: 22px;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 140px;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="#1f94e5", endcolorstr="#1260c8", gradientType=1);
+    background: -ms-linear-gradient(top, #1f94e5, #1260c8); /* IE 10 */
+
+    background: -moz-linear-gradient(top, #1f94e5, #1260c8); /*火狐*/
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1f94e5), to(#1260c8)); /*谷歌*/
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1f94e5), to(#1260c8)); /* Safari 4-5, Chrome 1-9*/
+
+    background: -webkit-linear-gradient(top, #1f94e5, #1260c8); /*Safari5.1 Chrome 10+*/
+
+    background: -o-linear-gradient(top, #1f94e5, #1260c8); /*Opera 11.10+*/
+}
+
+.pagination {
+    width: auto;
+    font-size: 14px;
+}
+
+.footgrape .right_r {
+    float: right;
+}
+
+.footgrape {
+    width: 1270px;
+}
+
+.qh {
+    float: right;
+}
+
+.del {
+    cursor: pointer;
+}
+
+.left_xz {
+    float: left;
+    margin-left: 70px;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.left_xz input {
+    margin-right: 4px;
+}
+
+.del-info {
+    width: 93px;
+    height: 21px;
+    border: 1px solid #9bcdff;
+    float: left;
+    margin-left: 34px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+    color: #1675d5;
+    cursor: pointer;
+}
+
+.del-info:hover {
+    background: #1675d5;
+    color: #FFFFFF;
+}
+
+.input_check {
+    float: left;
+}
+
+.qh a {
+    float: left;
+    width: 81px;
+    height: 20px;
+    border: 1px solid #9abeec;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.selects ul li {
+    color: #000000;
+}
+
+.set_control .time {
+    position: absolute;
+    bottom: 0;
+    left: 170px;
+    font-size: 12px;
+    color: #cd0000;
+}
+
+/*新增*/
+.tablecont .searchs {
+
+}
+
+#pet ul li {
+    text-indent: 5px;
+    text-align: left;
+}
+
+/*7.0设备断网结束*/
+/*7.0确认框*/
+.tooltip {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -104px;
+    margin-top: -80px;
+    z-index: 20000;
+}
+
+.tooltip h3 {
+    text-align: center;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.tooltip .qdbtn {
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: #197ad2;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tooltip .qxbtn {
+    width: 100px;
+    height: 30px;
+    background-color: #4d98dc;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+

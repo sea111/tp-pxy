@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+		<title>培养箱</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div id="box">
+			<div class="contents">
+				<div class="cont">
+					<div class="top-con">
+						<div class="title-name fl"><img class="pyx-pic" src="images/pyx-pic.png"/>水稻恒温恒湿储藏箱1</div>
+						<div class="detail fr">详情<img class="pyx-arrow" src="images/pyx-arrow1.png"/></div>
+						<div class="clear"></div>
+					</div>
+					<div class="bottom-con">
+						<span class="online line-com">在线</span>
+						<div class="common fl"><span class="comm">温度</span><span class="com">15.70</span>℃</div>
+						<div class="common fl"><span class="comm">光照</span><span class="com">05等级</span></div>
+						<div class="common fl"><span class="comm">状态</span><span class="green">除湿、报警</span></div>
+						<div class="common fl"><span class="comm">设备告警</span><span class="green">化霜温度测量制度</span></div>
+					</div>
+				</div>
+				<div class="cont">
+					<div class="top-con">
+						<div class="title-name fl"><img class="pyx-pic" src="images/pyx-pic.png"/>水稻恒温恒湿储藏箱1</div>
+						<div class="detail details fr">详情<img class="pyx-arrow" src="images/pyx-arrow2.png"/></div>
+						<div class="clear"></div>
+					</div>
+					<div class="bottom-con">
+						<span class="offline line-com">在线</span>
+						<div class="common fl"><span class="comm">温度</span><span class="com">15.70</span>℃</div>
+						<div class="common fl"><span class="comm">光照</span><span class="com">05等级</span></div>
+						<div class="common fl"><span class="comm">状态</span><span class="green">除湿、报警</span></div>
+						<div class="common fl"><span class="comm">设备告警</span><span class="green">化霜温度测量制度</span></div>
+					</div>
+				</div>
+				<div class="cont">
+					<div class="top-con">
+						<div class="title-name fl"><img class="pyx-pic" src="images/pyx-pic.png"/>水稻恒温恒湿储藏箱1</div>
+						<div class="detail fr">详情<img class="pyx-arrow" src="images/pyx-arrow1.png"/></div>
+						<div class="clear"></div>
+					</div>
+					<div class="bottom-con">
+						<span class="online line-com">在线</span>
+						<div class="common fl"><span class="comm">温度</span><span class="com">15.7</span>℃</div>
+						<div class="common fl"><span class="comm">光照</span><span class="com">05等级</span></div>
+						<div class="common fl"><span class="comm">状态</span><span class="green">正常</span></div>
+						<div class="common fl"><span class="comm">设备告警</span><span class="green">正常</span></div>
+					</div>
+				</div>
+				<div class="cont">
+					<div class="top-con">
+						<div class="title-name fl"><img class="pyx-pic" src="images/pyx-pic.png"/>水稻恒温恒湿储藏箱1</div>
+						<div class="detail fr">详情<img class="pyx-arrow" src="images/pyx-arrow1.png"/></div>
+						<div class="clear"></div>
+					</div>
+					<div class="bottom-con">
+						<span class="online line-com">在线</span>
+						<div class="common fl"><span class="comm">温度</span><span class="com">15.7</span>℃</div>
+						<div class="common fl"><span class="comm">光照</span><span class="com">05等级</span></div>
+						<div class="common fl"><span class="comm">状态</span><span class="green">正常</span></div>
+						<div class="common fl"><span class="comm">设备告警</span><span class="green">正常</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>	
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);
+		
+		//进入详情页
+		$(".top").on("click","div",function(e){
+			if($(this).hasClass("details")){
+				e.preventDefault();
+			}else if($(this).hasClass("detail")){
+				window.location.href="detail.html";
+			}
+		})
+	</script>
+</html>
